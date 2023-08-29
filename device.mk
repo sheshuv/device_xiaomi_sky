@@ -512,4 +512,6 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
