@@ -156,6 +156,7 @@ on boot
     chmod 0644 /sys/bus/platform/devices/soc:fpc1020/power_ctrl
     chmod 0644 /sys/bus/platform/devices/soc:fpc1020/screen
     chmod 0666  /dev/goodix_fp
+    start mi_thermald
 
 #For TP
     chown system system /sys/class/touch/touch_dev/palm_sensor
