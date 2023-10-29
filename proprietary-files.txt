@@ -2,6 +2,14 @@
 system_ext/lib/libthermalclient.qti.so
 system_ext/lib64/libthermalclient.qti.so
 
+# QTI VNDK Framework Detect
+vendor/lib/libvndfwk_detect_jni.qti.so
+vendor/lib/libvndfwk_detect_jni.qti_vendor.so
+vendor/lib/libqti_vndfwk_detect_vendor.so
+vendor/lib64/libqti_vndfwk_detect_vendor.so
+vendor/lib64/libvndfwk_detect_jni.qti.so
+vendor/lib64/libvndfwk_detect_jni.qti_vendor.so
+
 # ACDB
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
