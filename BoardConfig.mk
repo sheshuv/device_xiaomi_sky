@@ -83,6 +83,12 @@ TARGET_ENABLE_MEDIADRM_64 := true
 BOARD_USES_DT := true
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtbs
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_KERNEL_BINARIES := Image
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/Image
+TARGET_KERNEL_CONFIG := config
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
@@ -94,8 +100,8 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
-    swinfo.fingerprint=$(LINEAGE_VERSION) \
-    mtdoops.fingerprint=$(LINEAGE_VERSION)
+    swinfo.fingerprint=$(aosp_VERSION) \
+    mtdoops.fingerprint=$(aosp_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -112,10 +118,10 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
-# Kill lineage kernel build task while preserving kernel
+# Kill aosp kernel build task while preserving kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 
-# Workaround to make lineage's soong generator work
+# Workaround to make aosp's soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Kernel Binary
@@ -244,7 +250,7 @@ DEVICE_MANIFEST_RAVELIN_FILES := \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
