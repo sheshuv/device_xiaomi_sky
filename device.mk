@@ -246,6 +246,11 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+#Init
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/bin/init.kernel.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot.sh \
+    $(DEVICE_PATH)/rootdir/etc/init.sky.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sky.perf.rc \
+
 # Input
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
