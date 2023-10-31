@@ -102,7 +102,6 @@ BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
     swinfo.fingerprint=$(aosp_VERSION) \
     mtdoops.fingerprint=$(aosp_VERSION) \
-    androidboot.selinux=permissive
 
 
 BOARD_BOOTCONFIG := \
