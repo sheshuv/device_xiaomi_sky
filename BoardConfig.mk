@@ -7,6 +7,9 @@
 # Inherit from the proprietary version
 -include vendor/xiaomi/sky/BoardConfigVendor.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_sky
+
 DEVICE_PATH := device/xiaomi/sky
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
