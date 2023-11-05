@@ -68,7 +68,7 @@ function blob_fixup() {
     vendor/lib64/libsnsdiaglog.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
         ;;
-    vendor/lib64/sensors.touch.detect.so)
+    vendor/lib64/sensors.touch.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
         ;;
     vendor/lib64/sensors.ssc.so)
@@ -98,7 +98,7 @@ function blob_fixup() {
     vendor/lib/libsnsdiaglog.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
         ;;
-    vendor/lib/sensors.touch.detect.so)
+    vendor/lib/sensors.touch.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
         ;;
     vendor/lib/sensors.ssc.so)
@@ -122,11 +122,6 @@ function blob_fixup() {
     vendor/lib/libgnss.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
         ;;
-        vendor/bin/hw/vendor.qti.hardware.display.composer-service)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
-            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
-            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
-            ;;
         vendor/lib64/libqtikeymint.so)
             "${PATCHELF}" --add-needed "android.hardware.security.rkp-V1-ndk.so" "${2}"
             ;;

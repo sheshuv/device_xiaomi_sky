@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_sky.mk
+    $(LOCAL_DIR)/octavi_sky.mk
 
