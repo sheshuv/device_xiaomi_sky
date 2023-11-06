@@ -696,12 +696,4 @@
         <fqname>@1.0::IDisplayFeature/default</fqname>
     </hal>
     <kernel target-level="6"/>
-    <hal format="aidl" optional="true"> 
-	            <name>android.hardware.power</name>
-		            <version>3</version> 
-			            <interface>
-					                <name>IPower</name> 
-							            <instance>default</instance> 
-								            </interface>
-									        </hal>
 </manifest>
