@@ -18,6 +18,10 @@ persist.bluetooth.system_audio_hal.enabled=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 
+# Property to enable HWC for VDS
+debug.sf.enable_hwc_vds=false
+vendor.display.vds_allow_hwc=true
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1

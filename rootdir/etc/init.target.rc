@@ -158,6 +158,8 @@ on boot
     chmod 0666  /dev/goodix_fp
     start mi_thermald
 
+#    write /sys/class/thermal/thermal_message/sconfig 500
+
 #For TP
     chown system system /sys/class/touch/touch_dev/palm_sensor
     chown system system /proc/touchscreen/proximity_switch
@@ -185,6 +187,9 @@ on property:vendor.display.lcd_density=560
 
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
+
+on property:sys.boot_completed=1
+    write /sys/class/thermal/thermal_message/sconfig 500
 
 #+ExtR HONGMI-168554, p-wangpeng39, 20230330, add, for gt_tg configuration single card requirements
 on property:ro.boot.multisim=*

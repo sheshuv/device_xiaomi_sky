@@ -229,14 +229,9 @@ vendor.gatekeeper.disable_spu=true
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.color_mode=7
 persist.sys.sf.native_mode=256
-debug.cpurend.vsync=false
 debug.sf.hw=0
 debug.egl.hw=0
-ddebug.sf.auto_latch_unsignaled=1
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
+debug.sf.auto_latch_unsignaled=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_advanced_sf_phase_offset=1
@@ -257,6 +252,12 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.vendor.all_modes.colorpick_adjust=true
 vendor.gralloc.disable_ubwc=0
+
+# Refresh Rate
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=500
+ro.surface_flinger.set_touch_timer_ms=1000
+debug.sf.frame_rate_multiple_threshold=60
 
 # Incremental
 ro.incremental.enable=yes
