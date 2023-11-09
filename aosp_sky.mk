@@ -15,6 +15,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit common aospOS configurations
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/extra/ih8sn/product.mk)
+
 # Inherit device configurations
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
@@ -31,8 +33,4 @@ PRODUCT_MANUFACTURER := Xiaomi
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-			PRIVATE_BUILD_DESC="sky-user 12 TKQ1.221114.001 V14.0.5.0.TMWINXM release-keys"
-
-BUILD_FINGERPRINT := Redmi/sky/sky:12/TKQ1.221114.001/V14.0.5.0.TMWINXM:user/release-keys
 
