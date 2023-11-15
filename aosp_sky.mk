@@ -21,6 +21,8 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
+$(call inherit-product, vendor/extra/ih8sn/product.mk)
+
 ## Device identifier
 PRODUCT_DEVICE := sky
 PRODUCT_NAME := aosp_sky
