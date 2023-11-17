@@ -43,3 +43,7 @@ persist.vendor.ssr.enable_ramdumps=1
 # WiFi display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# Property to enable HWC for VDS
+debug.sf.enable_hwc_vds=false
+vendor.display.vds_allow_hwc=true

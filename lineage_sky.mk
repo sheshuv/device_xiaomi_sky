@@ -19,7 +19,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit ih8sn Makefile
-$(call inherit-product, vendor/extra/ih8sn/product.mk)
+#$(call inherit-product, vendor/extra/ih8sn/product.mk)
 
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
