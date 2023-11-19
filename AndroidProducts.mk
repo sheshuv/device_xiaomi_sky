@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_sky.mk
+    $(LOCAL_DIR)/bliss_sky.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_sky-eng \
-    aosp_sky-userdebug \
-    aosp_sky-user
+    bliss_sky-eng \
+    bliss_sky-userdebug \
+    bliss_sky-user
