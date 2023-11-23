@@ -18,6 +18,8 @@ $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+$(call inherit-product, vendor/extra/ih8sn/product.mk)
+
 # Project ID Quota.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
