@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit common superiorOS configurations
-$(call inherit-product, vendor/superior/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit device configurations
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
@@ -21,7 +21,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
-$(call inherit-product, vendor/extra/ih8sn/product.mk)
+#$(call inherit-product, vendor/extra/ih8sn/product.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := sky
