@@ -76,7 +76,10 @@ void vendor_load_properties() {
     // Detect variant and override properties
     std::string region = GetProperty("ro.boot.hwc", "");
     std::string boardid = GetProperty("ro.boot.boardid", "");
-    if (region == "India" && boardid == "S88019EP1") {
+    if (region == "Global" && boardid == "S88029AA1") {
+	            set_device_props(                                           "Redmi/sky/sky:13/TKQ1.221114.001/V14.0.5.0.TMWEUXM:user/release-keys",
+	 "sky-user-12-TKQ1.221114.001-V14.0.5.0.TMWEUXM-release-keys", "Redmi", "rever",				 "23076RN8DY", "sky_global", "Redmi 12 5G");
+    } else if (region == "India" && boardid == "S88019EP1") {
 	set_device_props(
 	    "POCO/sky_p_in/sky:13/TKQ1.221114.001/V14.0.5.0.TMWINXM:user/release-keys",
             "sky-user-12-TKQ1.221114.001-V14.0.5.0.TMWINXM-release-keys", "POCO", "sky",
