@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_sky.mk
+    $(LOCAL_DIR)/tequila_sky.mk
 
