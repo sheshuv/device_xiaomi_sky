@@ -5,6 +5,7 @@
 -->
 <resources>
 
+<bool name="config_show_refresh_rate_controls">true</bool>
 <integer name="config_defaultPeakRefreshRate">90</integer>
 <integer name="config_defaultRefreshRate">90</integer>
 
