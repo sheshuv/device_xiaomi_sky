@@ -347,9 +347,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.3.vendor \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
+#PRODUCT_BOOT_JARS += \
+#    QPerformance \
+#    UxPerformance
 
 # Power
 PRODUCT_COPY_FILES += \
