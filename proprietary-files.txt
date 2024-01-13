@@ -2153,6 +2153,8 @@ vendor/firmware/focaltech_ft8720_hx.ini
 vendor/firmware/focaltech_ts_fw_.bin
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
+vendor/firmware/focaltech_8725_fw.bin
+vendor/firmware/focaltech_ft8725_hx.ini  
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
