@@ -76,7 +76,7 @@ on late-fs
     mount_all --late
 
     # Enable ZRAM on boot_complete
-    swapon_all /vendor/etc/fstab.qcom
+    swapon_all /vendor/etc/fstab.default
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
