@@ -39,8 +39,8 @@ function configure_zram_parameters() {
 
 	let RamSizeGB="( $MemTotal / 1048576 ) + 1"
 	diskSizeUnit=M
-	if [ $RamSizeGB -le 2 ]; then
-		let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 4"
+	if [ $RamSizeGB -le 6 ]; then
+		let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 5"
 	else
 		let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
 	fi
@@ -73,6 +73,7 @@ function configure_zram_parameters() {
 		mkswap /dev/block/zram0
 		swapon /dev/block/zram0 -p 32758
 	fi
+
 }
 
 function configure_read_ahead_kb_values() {
@@ -162,7 +163,9 @@ case "$platformid" in
 esac
 
 ProductName=`getprop ro.product.name`
-if [ "$ProductName" == "sky" ] || [ "$ProductName" == "river" ] ; then
+ProductDevice=`getprop ro.product.device`
+echo " product name is $ProductName and product Device is $ProductDevice"
+if [ "$ProductDevice" == "sky" ] || [ "$ProductDevice" == "river" ] ; then
 	echo 160 > /proc/sys/vm/swappiness
 	sleep 600
 	echo 60 > /proc/sys/vm/watermark_scale_factor
