@@ -2002,6 +2002,8 @@ vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 
 # Thermal
+system_ext/lib/libthermalclient.qti.so
+system_ext/lib64/libthermalclient.qti.so
 vendor/bin/hw/android.hardware.thermal@2.0-service.qti-v2
 vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc
 vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml
