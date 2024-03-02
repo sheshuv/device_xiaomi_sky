@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package org.pixelexperience.settings;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -24,8 +24,8 @@ import android.os.IBinder;
 import android.view.Display.HdrCapabilities;
 import android.view.SurfaceControl;
 
-import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.thermal.ThermalUtils;
+import org.pixelexperience.settings.dirac.DiracUtils;
+import org.pixelexperience.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 

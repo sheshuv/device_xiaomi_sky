@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.thermal;
+package org.pixelexperience.settings.thermal;
 
 import android.app.ActivityTaskManager;
 import android.app.TaskStackListener;

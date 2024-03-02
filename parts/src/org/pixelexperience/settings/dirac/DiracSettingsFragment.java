@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.dirac;
+package org.pixelexperience.settings.dirac;
 
 import android.app.Activity;
 import android.content.Context;
@@ -33,7 +33,7 @@ import androidx.preference.SwitchPreference;
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
-import org.lineageos.settings.R;
+import org.pixelexperience.settings.R;
 
 public class DiracSettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener, OnMainSwitchChangeListener {
