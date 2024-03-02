@@ -370,8 +370,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     Ims \
-    QtiTelephony \
-    qti-telephony-common
+    QtiTelephony
 
 # Rootdir
 PRODUCT_PACKAGES += \
