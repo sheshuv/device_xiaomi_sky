@@ -35,3 +35,6 @@ on post-fs-data
 
 on property:vendor.fps_hal.restartimes=max
 	stop vendor.fps_hal_lc
+
+on property:sys.boot_completed=1
+    write /sys/class/thermal/thermal_message/sconfig 500
