@@ -11,6 +11,10 @@ ro.charger.enable_suspend=1
 # CNE
 persist.vendor.cne.feature=1
 
+# Property to enable HWC for VDS
+debug.sf.enable_hwc_vds=false
+vendor.display.vds_allow_hwc=true
+
 # Hint Manager
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
