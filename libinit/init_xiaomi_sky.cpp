@@ -50,7 +50,7 @@ static const variant_info_t sky_china_info = {
     .build_fingerprint = FINGERPRINT_CHINA,
 };
 
-static const variant_info_t river_info = {
+static const variant_info_t river_info_S88029AA1 = {
     .hwc_value = "Global",
     .boardid = "S88029AA1",
 
@@ -62,11 +62,50 @@ static const variant_info_t river_info = {
     .build_fingerprint = FINGERPRINT_GLOBAL,
 };
 
+static const variant_info_t river_info_S88019BP1 = {
+    .hwc_value = "CN",
+    .boardid = "S88019BP1",
+
+    .brand = "Redmi",
+    .device = "river",
+    .marketname = "Redmi 12 5G",
+    .model = "23077RABDC",
+    .mod_device = "sky_global",
+    .build_fingerprint = FINGERPRINT_CHINA,
+};
+
+static const variant_info_t river_info_S88018PA1 = {
+    .hwc_value = "Global",
+    .boardid = "S88018PA1",
+
+    .brand = "Redmi",
+    .device = "river",
+    .marketname = "Redmi 12 5G",
+    .model = "23077RABDC",
+    .mod_device = "sky_global",
+    .build_fingerprint = FINGERPRINT_GLOBAL,
+};
+
+static const variant_info_t river_info_S88029JA1 = {
+    .hwc_value = "Japan",
+    .boardid = "S88018PA1",
+
+    .brand = "Redmi",
+    .device = "river",
+    .marketname = "Redmi 12 5G",
+    .model = "23076RA4BR",
+    .mod_device = "sky_global",
+    .build_fingerprint = FINGERPRINT_GLOBAL,
+};
+
 static const std::vector<variant_info_t> variants = {
     sky_poco_info,
     sky_redmi_info,
     sky_china_info,
-    river_info,
+    river_info_S88029AA1,
+    river_info_S88019BP1,
+    river_info_S88018PA1,
+    river_info_S88029JA1,
 };
 
 void vendor_load_properties() {
