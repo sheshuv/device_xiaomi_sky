@@ -1,3 +1,6 @@
+# Test
+vendor/lib64/libgrpc++_unsecure.so
+
 # ACDB
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
@@ -879,7 +882,6 @@ system_ext/bin/dpmd
 system_ext/bin/tcmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
-system_ext/etc/init/tcmd.rc
 system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
 system_ext/etc/seccomp_policy/tcmd.policy
