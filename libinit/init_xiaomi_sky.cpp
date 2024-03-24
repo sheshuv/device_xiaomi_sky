@@ -88,7 +88,7 @@ static const variant_info_t river_info_S88018PA1 = {
 
 static const variant_info_t river_info_S88029JA1 = {
     .hwc_value = "Japan",
-    .boardid = "S88018PA1",
+    .boardid = "S88029JA1",
 
     .brand = "Redmi",
     .device = "river",
