@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_sky.mk
+    $(LOCAL_DIR)/bliss_sky.mk
 
 #COMMON_LUNCH_CHOICES := \
-#    lineage_sky-eng \
-#    lineage_sky-userdebug \
-#    lineage_sky-user
+#    bliss_sky-eng \
+#    bliss_sky-userdebug \
+#    bliss_sky-user
