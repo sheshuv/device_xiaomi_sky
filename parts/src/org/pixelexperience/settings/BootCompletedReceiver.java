@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package org.pixelexperience.settings;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import org.lineageos.settings.thermal.ThermalUtils;
+import org.pixelexperience.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 

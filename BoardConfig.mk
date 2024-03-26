@@ -123,10 +123,10 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
-# Kill lineage kernel build task while preserving kernel
+# Kill aosp kernel build task while preserving kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 
-# Workaround to make lineage's soong generator work
+# Workaround to make aosp's soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Kernel Binary
@@ -170,11 +170,6 @@ BOARD_SUPER_PARTITION_SIZE := 6979321856
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor vendor_dlkm
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6975127552
-
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1073741824
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 1073741824
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1073741824
-BOARD_VENDOR_DLKMIMAGE_PARTITION_RESERVED_SIZE := 67108864
 
 #BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 104857600
 #BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 104857600
@@ -272,7 +267,7 @@ DEVICE_MANIFEST_RAVELIN_FILES := \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 ODM_MANIFEST_SKUS += hceese hcesim hcesim1 hcesim1ese hcesimese
 ODM_MANIFEST_HCEESE_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hceese.xml
 ODM_MANIFEST_HCESIM_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hcesim.xml
